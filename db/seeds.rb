@@ -17,7 +17,7 @@ gulja = { name: "Gulja", address: "75008 Paris", category: "belgian", phone_numb
 reine = { name: "Reine", address: "380 Collins St, Melbourne", category: "japanese", phone_number: "333444" }
 bamboo = { name: "Bamboo", address: "47 Little Bourke St, Melbourne", category: "chinese", phone_number: "555666" }
 
-[dishoom, pizza_east].each do |attributes|
+[dishoom, pizza_east, gulja, reine, bamboo].each do |attributes|
   restaurant = Restaurant.create!(attributes)
   puts "Created #{restaurant.name}"
 end
